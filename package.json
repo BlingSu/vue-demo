@@ -6,7 +6,7 @@
   "author": "angelasubi",
   "scripts": {
     "dev": "cross-env NODE_ENV=development node ./app/app.js",
-    "release": "webpack --config ./webpack.conf.pro.js",
+    "release": "webpack --config ./webpack.conf.prd.js",
     "start": "cross-env NODE_ENV=production node ./app/app.js"
   },
   "devDependencies": {
