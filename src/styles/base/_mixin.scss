@@ -1,0 +1,11 @@
+/* mixin */
+
+@charset "UTF-8";
+@import "./variables";
+
+/* example */
+@mixin ellipsis() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

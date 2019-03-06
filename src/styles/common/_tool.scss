@@ -1,0 +1,26 @@
+/* common */
+@charset "UTF-8";
+
+.clearfix {
+  *zoom: 1;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+.ellipsis {
+  @include ellipsis();
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
