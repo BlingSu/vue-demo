@@ -101,13 +101,23 @@ module.exports = {
       inject: false,
       minify: {
         caseSensitive: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
+        minifyJS: true,
+        minifyCSS: true
       },
       alwaysWriteToDisk: true
     })
   ],
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+        include: [
+          path.join(process.cwd() + '/src')
+        ]
+      },
       {
         test: /\.vue$/i,
         loader: 'vue-loader',

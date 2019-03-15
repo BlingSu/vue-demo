@@ -1,7 +1,7 @@
 {
   "name": "vue-demo",
   "version": "1.0.0",
-  "description": "vue+webpack4.0+koa2搭建而成的pc端移动端架子",
+  "description": "vue+webpack4.0+koa2搭建而成的pc端+移动端架子",
   "main": "",
   "author": "angelasubi",
   "scripts": {

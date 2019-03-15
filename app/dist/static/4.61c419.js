@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[4],{er4n:function(e,n,t){"use strict";t.r(n);var i=function(){var e=this,n=e.$createElement;return(e._self._c||n)("div",{staticClass:"home"},[e._v("\n  home page...\n")])};i._withStripped=!0;var s={},o=t("F8we"),r=Object(o.a)(s,i,[],!1,null,null,null);r.options.__file="src/views/home/index.vue";n.default=r.exports}}]);

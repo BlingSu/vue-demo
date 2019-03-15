@@ -12,7 +12,7 @@ export default function fetchApi (url, options) {
     if (!isObj(options)) {
       options = {}
     }
-    let baseURL = process.env.NODE_ENV === 'production' ? '' : 'http://...'
+    let baseURL = process.env.NODE_ENV === 'production' ? '' : 'http://development.test.api'
     let headers = new Headers({})
     if (isObj(options.headers)) {
       for (let k in options.headers) {
