@@ -28,35 +28,9 @@ npm run release
 
 
 ## 如何搭建
-1. 先看看目录结构
-```
-|--------------------------------------------------
-|---/app  //  koa server 
-|---|---/dist  //  打包的静态资源文件夹
-|---|---/app.js  //  koa入口
-|---|---/router.js  //  koa-router配置
-|---/node_modules  //  npm依赖
-|---/src  //  主目录，会被打包到/app/dist
-|---|---/api  //  公共API
-|---|---/assets  //  公共资源
-|---|---|---/images  //  公共图片
-|---|---|---/fonts  //  公共字体文件
-|---|---/common  //  公共方法
-|---|---|---/components  //  公共vue组件
-|---|---|---/mixins  //  公共mixins
-|---|---|---/plugin  //  公共自定义vue插件
-|---|---|---/utils  //  公共js方法
-|---|---/router  //  前端路由
-|---|---/styles  //  scss样式
-|---|---/views  //  页面的模块
-|---|---/app.js  //  前端入口
-|---|---/index.html  //  模板html, 将会被打包到/app/dist
-|---.babelrc  //  babel配置
-|---.gitignore  //  git配置
-|---.stylelintrc  //  stylelint配置
-|---package.json  //  npm配置
-|---README.md  //  项目介绍
-|---webpack.conf.dev.js  //  webpack开发环境配置
-|---webpack.conf.pro.js  //  webpack生产环境配置
-|--------------------------------------------------
-
+1. 先来简单的介绍一下目录结构，然后我们再来挨个详细的介绍！
+首先，在根目录下有2个文件（app和src）和一堆配置文件，app为打包的输出点，src为源码。
+2. 先说说根目录下的配置文件是干啥的
+* .balelrc 配置一些东西来达成不用浏览器支持就可以编译成需要的代码 [可以看这里](https://github.com/babel/babel)
+* .gitignore 防止提交 node_modules 或者 dist 之类的一些不需要提交的文件
+* .styleintrc 一些css规则 [可以看这里](https://stylelint.io/user-guide/rules)
