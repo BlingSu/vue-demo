@@ -46,4 +46,7 @@ npm run release
  - styles 样式文件，包括mixins、normalize、variables、layout、tool、rest以及框架自带的修改文件
  - views 页面，可以根据功能区分，这里只加了一个layout
 
- 4. 重点来说说webpack
+4. 重点来说说webpack
+> 分为两个文件 webpack.conf.dev.js 和 webpack.conf.prd.js，对应为开发环境和生产环境的构建
+ #### 先看看`webpack.conf.dev.js`里面做了什么  
+ 
