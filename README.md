@@ -56,12 +56,12 @@ npm run release
  - `STATIC_PREFIX` HTML内引入资源的前缀 `/static/`
 
 然后就是引入一些需要的node_modules，在这里用到了如下几个包  
-[`path` 一个处理文件路径和目录路径的包](http://nodejs.cn/api/path.html)  
-[`webpack` 模块打包工具](https://webpack.js.org/)  
-[`html-webpack-plugin` 生成一个HTML文件](https://github.com/jantimon/html-webpack-plugin)  
-[`html-webpack-harddisk-plugin` 上面的扩展，在HRM的时候特别方便](https://github.com/jantimon/html-webpack-harddisk-plugin)  
-[`stylelint-webpack-plugin` 代码校验](https://github.com/webpack-contrib/stylelint-webpack-plugin)  
-[`vue-loader` 不用多说了...](https://github.com/vuejs/vue-loader)  
+[`path`](http://nodejs.cn/api/path.html)   一个处理文件路径和目录路径的包  
+[`webpack`](https://webpack.js.org/) 模块打包工具  
+[`html-webpack-plugin`](https://github.com/jantimon/html-webpack-plugin) 生成一个HTML文件  
+[`html-webpack-harddisk-plugin`](https://github.com/jantimon/html-webpack-harddisk-plugin) 上面的扩展，在HRM的时候特别方便  
+[`stylelint-webpack-plugin`](https://github.com/webpack-contrib/stylelint-webpack-plugin) 代码校验  
+[`vue-loader`](https://github.com/vuejs/vue-loader) loader...  
 
 在配置的时候那么需要一个简单的模块大致如下
 ```js
