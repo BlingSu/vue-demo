@@ -117,6 +117,7 @@ touch .gitignore  # 提交无视node_modules之类的
 ```
 重点说两个方面  
 > src开发目录 （文件名已语义化）  
+  
 app.js入口引入需要的东西  
 最简单的来讲就是引入`Vue, router, css`还有`app.vue`然后实例一个Vue。后续可以添加一些UI框架（比如ElementUI），自定义的配置和一些环境的判断之类的。  
 然后来说说已经在这个demo中加入的东西`fetch`和`svg-icon` 
@@ -124,7 +125,8 @@ app.js入口引入需要的东西
 其实就是做一些处理，采用的type和params的方式而已  
 因为在很多情况下会用到很多icon，如果全都一个一个手动去搞就太麻烦了，所以简单的写了一个components，用的时候就很爽了，只要把svg扔到assets/iamges/svg下就行了，然后通过相同的名字去调用就好啦。不过如果icon太多的话建议还是弄成字体吧，这样会好点～～
 
-> app中启动本地服务
+> app中启动本地服务  
+  
 app/app.js 中为入口，也就是在package.json中调用的node服务，这里采用koa2相关的模块来启动，当然是限于dev环境，并没有配置prd环境。如果打包后的dist想要部署的话可以放到服务器上就行啦～  
 router.js 就是对应打包后的dist文件的index.html通过fs调用展示  
 
