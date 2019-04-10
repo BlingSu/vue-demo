@@ -131,7 +131,7 @@ app/app.js 中为入口，也就是在package.json中调用的node服务，这�
 router.js 就是对应打包后的dist文件的index.html通过fs调用展示  
 
 ## 最后
-感觉是一个相对比较简单的`Webpack4`和`Vue`的demo
+感觉是一个相对比较简单的`Webpack4`和`Vue`的demo  
 如果有什么问题或者遗漏的地方欢迎提`issue`，谢谢😁
 
 ## MIT
