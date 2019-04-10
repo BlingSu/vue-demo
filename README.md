@@ -116,7 +116,7 @@ touch .styleintrc  # 规则
 touch .gitignore  # 提交无视node_modules之类的
 ```
 重点说两个方面  
-> src开发目录 （文件名已语义化）
+> src开发目录 （文件名已语义化）  
 app.js入口引入需要的东西  
 最简单的来讲就是引入`Vue, router, css`还有`app.vue`然后实例一个Vue。后续可以添加一些UI框架（比如ElementUI），自定义的配置和一些环境的判断之类的。  
 然后来说说已经在这个demo中加入的东西`fetch`和`svg-icon` 
