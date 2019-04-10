@@ -51,7 +51,26 @@ npm run release
 
 #### 先看看`webpack.conf.dev.js`里面做了什么  
 首先定义三个打包地址的常量  
+1. `STATIC_DIST` 静态资源打包路径 `/app/dist`
+2. `HTML_DIST` HTML模板打包路径 `/app/dist`
+3. `STATIC_PREFIX` HTML内引入资源的前缀 `/static/`
 
+然后就是引入一些需要的node_modules，在这里用到了如下几个包  
+[`path` 一个处理文件路径和目录路径的包](http://nodejs.cn/api/path.html)  
+[`webpack` 模块打包工具](https://webpack.js.org/)  
+[`html-webpack-plugin` 生成一个HTML文件](https://github.com/jantimon/html-webpack-plugin)  
+[`html-webpack-harddisk-plugin` 上面的扩展，在HRM的时候特别方便](https://github.com/jantimon/html-webpack-harddisk-plugin)  
+[`stylelint-webpack-plugin` 代码校验](https://github.com/webpack-contrib/stylelint-webpack-plugin)  
+[`vue-loader` 不用多说了...](https://github.com/vuejs/vue-loader)  
 
-
- 
+在配置的时候那么需要一个简单的模块大致如下
+```js
+module.exports = {
+  entry: [],
+  output: {},
+  devServer: {},
+  resolve: {},
+  plugins: [],
+  module: {}
+}
+```
